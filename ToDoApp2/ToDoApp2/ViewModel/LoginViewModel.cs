@@ -35,7 +35,7 @@ namespace ToDoApp2.ViewModel
         }
 
 
-        public Command LoginCommand;
+        public Command LoginCommand { get; }
 
         public LoginViewModel()
         {
