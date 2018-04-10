@@ -13,7 +13,7 @@ namespace ToDoApp2
 		{
 			InitializeComponent();
 
-			MainPage = new View.LoginView();
+			MainPage = new NavigationPage(new View.LoginView());
 		}
 
 		protected override void OnStart ()

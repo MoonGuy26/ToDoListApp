@@ -15,7 +15,7 @@ namespace ToDoApp2.View
 		public LoginView ()
 		{
 			InitializeComponent ();
-            BindingContext = new LoginViewModel();
+            BindingContext = new LoginViewModel(Navigation);
 		}
 	}
 }

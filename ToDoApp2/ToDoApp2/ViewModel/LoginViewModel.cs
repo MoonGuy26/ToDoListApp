@@ -37,9 +37,13 @@ namespace ToDoApp2.ViewModel
 
         public Command LoginCommand { get; }
 
-        public LoginViewModel()
+        private INavigation _navigation;
+
+        public LoginViewModel(INavigation navigation)
         {
             LoginCommand = new Command(LoginExecute, CanLogin);
+
+            _navigation = navigation;
         }
 
         private bool CanLogin()
