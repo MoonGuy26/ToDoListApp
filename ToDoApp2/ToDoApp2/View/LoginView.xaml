@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp2.View.LoginView">
   <ContentPage.Content>
-      <StackLayout>
-            <Label Text="Login"></Label>
-            <Entry Placeholder="username"/>
-            <Entry Placeholder="password"/>
-            <Button Text="Sign in"/>
+      <StackLayout Margin="20" Spacing="16">
+            <Label Text="Login" HorizontalTextAlignment="Center" FontSize="24" FontAttributes="Bold"></Label>
+            <Entry Placeholder="username" Text="{Binding Username}"/>
+            <Entry Placeholder="password" IsPassword="True" Text="{Binding Password}"/>
+            <Button Text="Sign in" Command="{Binding LoginCommand}" BackgroundColor="ForestGreen" TextColor="White"/>
         </StackLayout>
   </ContentPage.Content>
 </ContentPage>
